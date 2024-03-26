@@ -1,0 +1,4 @@
+pandas
+polars[all]
+sqlalchemy
+psycopg2-binary
