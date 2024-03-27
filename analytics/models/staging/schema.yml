@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_BQ_DATABASE') }}"
+    schema: "{{ env_var('DBT_DB_SCHEMA') }}"
+    tables:
+      - name: victims_cdmx
+
+models:
+  - name: stg_victims_cdmx
+    description: ""
+    columns:
+      - name: crime_category
+        data_type: string
+        description: ""
+        tests:
+          - unique:
+              severity: warn
+          - not_null:
+              severity: warn
+
+      - name: crime
+        data_type: string
+        description: ""
+
+      - name: person_type
+        data_type: string
+        description: ""
+
+      - name: legal_quality
+        data_type: string
+        description: ""
+
+      - name: scope
+        data_type: string
+        description: ""
+
+      - name: townhall_fact
+        data_type: string
+        description: ""
+
+      - name: town_fact
+        data_type: string
+        description: ""
+
+      - name: fact_date
+        data_type: date
+        description: ""
