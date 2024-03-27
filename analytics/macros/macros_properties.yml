@@ -1,0 +1,18 @@
+version: 2
+
+macros:
+  - name: fill_legal_quality
+    description: >
+      This macro receives a calidad_juridica. If it is null, it returns a default value.
+  - name: fill_scope
+    description: >
+      This macro receives a competencia. If it is null, it returns a default value.
+  - name: fill_town_fact
+    description: >
+      This macro receives a municipio_hecho. If it is null, it returns a default value.
+  - name: fill_townhall_fact
+    description: >
+      This macro receives a alcaldia_hecho. If it is null, it returns a default value.
+  - name: fill_type_person
+    description: >
+      This macro receives a tipo_persona. If it is null, it returns a default value.

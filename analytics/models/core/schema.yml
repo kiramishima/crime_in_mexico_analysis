@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fact_crimes_by_category
+    description: >
+      Fact Crimes by Category
+
+  - name: fact_crimes_by_townhall
+    description: >
+      Fact Crimes by Town Hall
