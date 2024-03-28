@@ -1,4 +1,4 @@
-# Crime Mexico Data Engineering Project
+# Crime in Mexico City - Data Engineering Project
 
 Hi everyone, this is my final project for #dezoomcamp. I've reviewed the list of datasets and other projects for inspiration, and I've decided to use the datasets provided for the goverment of my country. Since I live in Mexico city, I had doubts about whether there is a registry of crimes (delitos) here. And voilà! I discovered the dataset from the FGJ institution
 
@@ -14,7 +14,20 @@ I’ve decided to focus on the years 2019 to 2023 because this dataset is update
 
 For more information about the dataset, you can visit the site of [datos abiertos](https://datos.cdmx.gob.mx/dataset/victimas-en-carpetas-de-investigacion-fgj).
 
-## Problem
+## Project directories
+
+- **eda**
+    - It contains the files of data exploration.
+- **mage**
+    - It contains the mage-ai project for worflow orchestration. Also, how setup mage-ai.
+- **analytics**
+    - It contains my dbt project.
+- **terraform**
+    - It contains the terraform files for deploy the infrastructure on Google Cloud Platform. Also, how deploy the infrastructure.
+- **bigquery**
+    - It contains the sql files for creating the external tables and the table with partition and clustering.
+
+`images` directories only contains images.
 
 ## Dataset used in the project
 
@@ -51,17 +64,17 @@ Below is a depicted description of the architecture used in this project.
 
 ![](images/infra.png)
 
-## Required Components
+## Technology Utilized
 
 The following tools are used in this project:
 
-- [Google Cloud Platform](https://cloud.google.com/?hl=es)
-    - [Google Cloud Storage](https://cloud.google.com/storage?hl=es-419)
-    - [Google BigQuery](https://cloud.google.com/bigquery?hl=es)
-- [Terraform](https://www.terraform.io/)
-- [Mage AI](https://www.mage.ai/)
-- [dbt](https://www.getdbt.com/product/dbt-cloud)
-- [Looker Studio](https://lookerstudio.google.com/)
+- **Cloud Provider** - [Google Cloud Platform](https://cloud.google.com/?hl=es)
+    - **Data Lake** - [Google Cloud Storage](https://cloud.google.com/storage?hl=es-419)
+    - **Data Warehouse** - [Google BigQuery](https://cloud.google.com/bigquery?hl=es)
+- **Infrastructure as code (IaC)** - [Terraform](https://www.terraform.io/)
+- **Workflow orchestration** - [Mage AI](https://www.mage.ai/)
+- **Transformations** - [dbt](https://www.getdbt.com/product/dbt-cloud)
+- **Visualization** - [Looker Studio](https://lookerstudio.google.com/)
 - [Python](https://www.python.org/)
 
 ## Visualizations
