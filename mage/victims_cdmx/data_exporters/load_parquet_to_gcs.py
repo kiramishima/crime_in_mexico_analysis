@@ -10,6 +10,12 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/src/personal-gcp.json'
 
 @data_exporter
 def export_data_to_google_cloud_storage(df: DataFrame, **kwargs) -> None:
+    """
+    This step uploads a parquet file to GCS.
+    You need added the variables:
+        - project_id
+        - bucket_name
+    """
     project_id = kwargs['project_id']
     bucket_name = kwargs['bucket_name']
     root_path = f'{bucket_name}'
