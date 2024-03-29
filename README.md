@@ -27,7 +27,9 @@ For more information about the dataset, you can visit the site of [datos abierto
 - **bigquery**
     - It contains the sql files for creating the external tables and the table with partition and clustering.
 
-`images` directories only contains images.
+`images` directories only contains images. 
+
+`setup_gcp.md` contains the steps for setup GCP.
 
 ## Dataset used in the project
 

@@ -23,7 +23,7 @@ bq_dataset_name="bq_victims_cdmx"
 gcs_bucket_name="victims-cdmx-bucket"
 ```
 
-## Steps
+## Execution steps
 
 1. Be sure you have installed [terraform](https://developer.hashicorp.com/terraform/install?product_intent=terraform).
 2. Creates `vars.tfvars`
